@@ -1,0 +1,2 @@
+execute if score game_running trials matches 1 run function trials:game/equip
+execute if score game_running trials matches 1 run give @s recovery_compass[enchantments={levels:{"minecraft:vanishing_curse":1}},enchantment_glint_override=false] 1
