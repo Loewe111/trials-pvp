@@ -11,11 +11,11 @@ effect give @a minecraft:regeneration 1 255 true
 effect give @a minecraft:saturation 1 255 true
 
 # execute as @e[tag=trials_marker] at @s run spreadplayers ~ ~ 30 50 true @a
-execute as @e[tag=trials_red ] at @s run tp @a[team=red ] ~ ~1 ~
-execute as @e[tag=trials_red ] at @s run spawnpoint @a[team=red ] ~ ~ ~
+execute as @e[tag=trials_red, sort=furthest, limit=1] at @s run tp @a[team=red ] ~ ~1 ~
+execute as @e[tag=trials_red, sort=furthest, limit=1] at @s run spawnpoint @a[team=red ] ~ ~ ~
 
-execute as @e[tag=trials_blue] at @s run tp @a[team=blue] ~ ~1 ~
-execute as @e[tag=trials_blue] at @s run spawnpoint @a[team=blue] ~ ~ ~
+execute as @e[tag=trials_blue, sort=furthest, limit=1] at @s run tp @a[team=blue] ~ ~1 ~
+execute as @e[tag=trials_blue, sort=furthest, limit=1] at @s run spawnpoint @a[team=blue] ~ ~ ~
 
 # no teams
 execute as @e[tag=trials_neutral] run tag @s remove trials_neutral 
