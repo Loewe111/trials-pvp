@@ -8,6 +8,7 @@ scoreboard objectives add trials dummy
 scoreboard players set time_left trials -1
 scoreboard players set game_running trials 0
 scoreboard players set start_countdown trials -1
+scoreboard players set enable_music trials 0
 
 scoreboard players set MINUTE trials 60
 scoreboard players set TICKS trials 20

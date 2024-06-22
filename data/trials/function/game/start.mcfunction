@@ -28,6 +28,9 @@ execute as @e[tag=trials_neutral ] at @s run spawnpoint @a[team=neutral ] ~ ~ ~
 execute as @e[tag=trials_spawn] at @s run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 2
 execute as @e[tag=trials_spawn] at @s run particle minecraft:explosion_emitter ~ ~1 ~
 
+# Music
+execute as @e at @s if score enable_music trials matches 1 run playsound minecraft:music_disc.precipice record @s ~ ~ ~ 300 1 1
+
 # Set Timer
 scoreboard players operation time_left trials = round_length trials
 scoreboard players set game_running trials 1
